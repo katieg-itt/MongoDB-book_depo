@@ -1,0 +1,48 @@
+#book_Depository{
+	margin-top: 30px;
+}
+#book_Depository .book-title{
+	padding: 40px 10px 10px 10px;
+}
+#book_Depository .list-body{
+	padding: 20px 10px 10px 10px;
+}
+#book_Depository .list-body li a{
+	display: inline-block;
+	text-align: right;
+	float: right;
+}
+#book_Depository .list-body li span{
+	display: inline-block;
+	width: 30%;
+	float: right;
+}
+#book_Depository .list-body li{
+	border-bottom: 1px solid #00796b;
+	font-size: 120%;
+	padding: 10px;
+}
+#book_Depository .list-body li:last-child{
+	border-bottom: none;
+}
+#book_Depository .book-title {
+	position:relative;
+}
+#book_Depository .book-title a.btn-floating {
+	position:absolute;
+	right:-25px;
+	bottom:-25px;
+}
+.list-nav {
+	margin-bottom:0;
+	padding:10px;
+}
+.list-nav .row {
+	margin-bottom:0;
+}
+.list-nav select {
+	height:2.7rem;
+}
+#deletelist {
+	margin:5px auto;
+}

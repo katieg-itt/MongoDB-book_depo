@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/screen.css"  media="screen,projection"/>      
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+     <div class="container">
+        <div class="row">
+          <div class="col s12 m8 offset-m2">
+            <div id="book_Depository" class="z-depth-5">
+              <div class="book-title indigo darken-3">
+                <h3 class="white-text">Book Depository</h3>
+                <a class="btn-floating btn-large waves-effect waves-light red modal-trigger" data-target="addbook"><i class="material-icons">add book</i></a>
+              </div>
+              <div class="list-body grey lighten-3">
+                <table>
+                  <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>ISBN</th>
+                        <th>Genre</th>
+                        <th width="10%">Status</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>Bad Dad</td>
+                      <td>David Walliams</td>
+                      <td>0008164657</td>
+                      <td><div class="chip">Fiction</div> <div class="chip">Adventure</div> <div class="chip">Children</div></td>
+                      <td><a href="#" title="Change Status"><i class="material-icons green-text">assignment_returned</i></a><a href="#" title="Delete Book"><i class="material-icons red-text">delete</i></a></td>
+                    </tr>
+                    <tr>
+                      <td>Birthday Boy</td>
+                      <td>David Baddiel</td>
+                      <td>0008200475</td>
+                      <td><div class="chip">Fiction</div> <div class="chip">Humor</div> <div class="chip">Children</div></td>
+                      <td><a href="#" title="Change Status"><i class="material-icons red-text">assignment_return</i></a><a href="#" title="Delete Book"><i class="material-icons red-text">delete</i></a></td>
+                    </tr>
+                    <tr>
+                      <td>Fifty Shades of Grey</td>
+                      <td>E. L. James</td>
+                      <td>9788379991655</td>
+                      <td><div class="chip">Fiction</div> <div class="chip">BDSM</div> <div class="chip">Shyte</div></td>
+                      <td><a href="#" title="Change Status"><i class="material-icons green-text">assignment_returned</i></a><a href="#" title="Delete Book"><i class="material-icons red-text">delete</i></a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- Modal Structure -->
+              <div id="addbook" class="modal">
+                <form method="post" action="/insert">
+                <div class="modal-content">
+                  <h4>Add New Book</h4>
+                  <div class="row">
+                    <div class="col s12">
+                      <div class="row">
+                        <div class="input-field col s6">
+                          <input id="title" name="title" type="text">
+                          <label for="title">Title</label>
+                        </div>
+                        <div class="input-field col s6">
+                          <input id="author" name="author" type="text">
+                          <label for="author">Author</label>
+                        </div>
+                        <div class="input-field col s6">
+                          <input id="isbn" name="isbn" type="text">
+                          <label for="isbn">ISBN</label>
+                        </div>
+                        <div class="input-field col s6">
+                          <input id="genre" name="genre" type="text">
+                          <label for="genre">Genre</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <input type="submit" class="waves-effect waves-green btn-flat" value="Save" />
+                  <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+                </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+
+
+
+
+
+
+
+       <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script>
+        $(function() {
+          $('#addbook').modal();
+        });
+      </script>
+  </html>
+    </body>
