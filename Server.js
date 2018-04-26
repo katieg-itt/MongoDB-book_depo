@@ -86,9 +86,13 @@ app.get("/",function(req,res){
 
 		    Books.mapReduce(mapRed, function (err, results) {
 		    	var summaryHTML = "<strong>Genre Breakdown</strong>";
-  				results.forEach(function(result) {
-  					summaryHTML+= "<br />" + result._id+": "+result.value;
-  				});
+		    	if(results.length) {
+  					results.forEach(function(result) {
+  						summaryHTML+= "<br />" + result._id+": "+result.value;
+  					});
+  				} else {
+  					summaryHTML = "No genres found";
+  				}
   				res.render('list', { "html": html, "summary":summaryHTML });
 			});		
 	    }
