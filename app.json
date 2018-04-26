@@ -1,6 +1,7 @@
 {
   "name": "MongoDB-book_depo",
   "scripts": {
+    "start": "node Server"
   },
   "env": {
   },
