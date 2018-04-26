@@ -10,6 +10,8 @@ var mongoose = require('mongoose');
 mongoose.connect('mongodb://books:books@ds159129.mlab.com:59129/heroku_z19pv916', { useMongoClient: true });
 mongoose.Promise = global.Promise;
 
+const PORT = process.env.PORT
+
 var Books = require('./models/Books.js');
 
 // Basic templating system taken from express docs http://expressjs.com/en/advanced/developing-template-engines.html
@@ -149,6 +151,6 @@ app.post('/insert', function(req, res) {
 })
 
 // Listen on port 3000, view app with http://localhost:3000
-app.listen(3000, function () {
+app.listen(PORT, function () {
   console.log('Example app listening on port 3000! http://localhost:3000')
 })
