@@ -86,7 +86,7 @@ app.get("/",function(req,res){
 
 		    Books.mapReduce(mapRed, function (err, results) {
 		    	var summaryHTML = "<strong>Genre Breakdown</strong>";
-		    	if(results.length) {
+		    	if(results) {
   					results.forEach(function(result) {
   						summaryHTML+= "<br />" + result._id+": "+result.value;
   					});
