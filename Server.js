@@ -10,7 +10,7 @@ var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/bookDepository', { useMongoClient: true });
 mongoose.Promise = global.Promise;
 
-var Books = require('./models/books.js');
+var Books = require('./models/Books.js');
 
 // Basic templating system taken from express docs http://expressjs.com/en/advanced/developing-template-engines.html
 var fs = require('fs') // this engine requires the fs module
