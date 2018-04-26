@@ -7,7 +7,7 @@ var multer = require('multer');
 var upload = multer();
 // mongoose stuff
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/bookDepository', { useMongoClient: true });
+mongoose.connect('mongodb://books:books@ds159129.mlab.com:59129/heroku_z19pv916', { useMongoClient: true });
 mongoose.Promise = global.Promise;
 
 var Books = require('./models/Books.js');
