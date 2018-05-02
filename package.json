@@ -4,11 +4,11 @@
   "description": "",
   "main": "Server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node nightwatch.js -c ./tests/nightwatch.conf.js -e chrome",
     "start": "node Server"
   },
   "engines": {
-    "node":"6.11.4",
+    "node": "6.11.4",
     "npm": "3.10.10"
   },
   "author": "",
@@ -17,6 +17,12 @@
     "body-parser": "^1.13.3",
     "express": "^4.13.3",
     "mongoose": "^4.12.4",
-    "multer": "^1.3.0"
+    "multer": "^1.3.0",
+    "nightwatch": "^0.9.21"
+  },
+  "devDependencies": {
+    "chromedriver": "^2.38.2",
+    "geckodriver": "^1.11.0",
+    "selenium-server": "^3.11.0"
   }
 }
