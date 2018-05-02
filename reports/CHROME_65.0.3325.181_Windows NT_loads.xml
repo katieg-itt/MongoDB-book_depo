@@ -5,9 +5,9 @@
 
   <testsuite name="loads"
     errors="0" failures="0" hostname="" id="" package="loads" skipped="0"
-    tests="1" time="32.24" timestamp="Wed, 02 May 2018 21:41:10 GMT">
+    tests="1" time="68.01" timestamp="Wed, 02 May 2018 21:57:56 GMT">
   
-    <testcase name="Testing loading on heroku" classname="loads" time="32.24" assertions="2">
+    <testcase name="Testing loading on heroku" classname="loads" time="68.01" assertions="2">
 
     
 

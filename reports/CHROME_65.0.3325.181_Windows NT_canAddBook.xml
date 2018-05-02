@@ -5,9 +5,9 @@
 
   <testsuite name="canAddBook"
     errors="0" failures="0" hostname="" id="" package="canAddBook" skipped="0"
-    tests="1" time="31.89" timestamp="Wed, 02 May 2018 21:41:10 GMT">
+    tests="1" time="70.04" timestamp="Wed, 02 May 2018 21:57:56 GMT">
   
-    <testcase name="Can Add Book" classname="canAddBook" time="31.89" assertions="4">
+    <testcase name="Can Add Book" classname="canAddBook" time="70.04" assertions="4">
 
     
 
